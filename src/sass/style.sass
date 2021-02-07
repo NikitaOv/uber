@@ -307,18 +307,34 @@ nav
         list-style-type: none
         padding-left: 50px;
         &-item
-
+            position: relative
             font-weight: 300
             font-size: 17px
-            line-height: 30px
+            margin-bottom: 10px
             /** text-indent: 50px **/
             color: #222222
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.png') center center/ cover no-repeat
     &_descr
         margin-top: 25px;
         font-weight: 300
         font-size: 17px
         line-height: 24px
         color: $main-color
+    .warning
+        .require_title
+            color: $second-color
+        .require_list-item
+            &::before
+                background: url('../icons/check_red.png') center center/ cover no-repeat
+
 
             
                 
