@@ -354,6 +354,8 @@ nav
         color: $main-color
 
 .footer
+    position: relative
+    padding: 0 22px
     height: 156px
     background: #ffff
     display: flex
@@ -362,6 +364,7 @@ nav
     &_social
         display: flex
         &-link
+            margin-right: 6px
             width: 35px
             height: 35px
             background: #070716
@@ -369,6 +372,11 @@ nav
     &_row
         display: flex
         justify-content: space-around
+    &_nav
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
     &_nav-main
         font-style: normal
         font-weight: 300
@@ -376,12 +384,17 @@ nav
         text-transform: uppercase
         color: #070716
     &_nav-secondary
+        margin: 16px 10px 0
         font-weight: 300
         font-size: 11px
         text-transform: uppercase
         color: #999999
     &_lang
+        margin-top: 17px
         font-size: 11px
         text-transform: uppercase
         color: $main-color
+    &_links
+        width: 296px
+        height: 27px
                     
