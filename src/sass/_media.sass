@@ -68,6 +68,9 @@
         
 
 @media (max-width: 767px)
+    a
+        &:hover
+            color: #ffff
     .menu
         position: fixed
         z-index: 100
@@ -84,7 +87,10 @@
         &_active
             left: 0
         &_item
+            width: 100%
+            text-align: center
             padding-right: 0
+            padding: 5px 0
             border: 0
             margin: 10px 0
         &_link
@@ -131,14 +137,20 @@
             height: 40px
             margin: 0 auto
             margin-top: 10px
+            &:hover
+                background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
     .promo
         &_header
             line-height: 45px
+        &_btn
+            &:hover
+                background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
 
 @media (max-width: 575px)
     nav
         height: 30px
     .subheader
+        margin-top: 30px;
         height: 60px
         &_official
             display: none
@@ -154,7 +166,7 @@
             height: 22px
             font-size: 10px
     .promo
-        padding: 101px 0 34px
+        padding: 131px 0 34px
         min-height: 400px
         &_descr
             display: none
